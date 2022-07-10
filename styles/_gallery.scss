@@ -1,0 +1,108 @@
+.gallery {
+    position: relative;
+    background-color: #F5F5F2;
+
+    .frame-top-right-wrapper, .frame-bottom-left-wrapper {
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .frame-top-right-wrapper {
+        justify-content: flex-end;
+    }
+
+    .frame-bottom-left-wrapper {
+        justify-content: flex-start;
+    }
+    
+    .container {
+        padding: 0 65px 160px;
+    }
+    &__grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        padding-bottom: 80px;
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        &--top {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    &__badge {
+        &--wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    &__main-title {
+        font-family: $fontRoboto;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        color: #2A2C1F;
+        margin-bottom: 80px;
+    }
+    &__content {
+        padding: 25px;
+        &--wrapper {
+            background-color: #ffffff;
+            border-radius: 12px;
+            &:hover, &:focus{
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+                transform: translate(2px, -2px);
+                cursor: pointer;
+            }
+        }
+    }
+    &__secondary-title {
+        font-family: $fontRoboto;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        color: #2A2C1F;
+    }
+    &__price {
+        font-family: $fontRoboto;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        color: #2A2C1F;
+        margin-bottom: 15px;
+    }
+    &__address {
+        font-family: $fontRoboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #65665C;
+        margin-bottom: 15px;
+    }
+    &__icon-info {
+        font-family: $fontRoboto;
+        font-weight: 400;
+        font-size: 16px;
+        color: #65665C;
+        padding: 25px;
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+    &__button {
+        font-size: 16px;
+        &--wrapper {
+            justify-content: center;
+        }
+    }
+    .material-icons {
+        font-size: 16px;
+        padding-right: 10px;
+        transform: translateY(2px);
+    }
+}

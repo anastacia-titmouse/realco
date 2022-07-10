@@ -1,0 +1,18 @@
+.commercial {
+    background-color: #939878;
+    .container {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    &__text {
+        font-family: $fontRoboto;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+        &--wrapper {
+            margin: 0 auto; /* https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties */
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-weight: 400;
+    text-align: center;
+    font-family: $fontRoboto;
+    transition: background-color .3s ease-in-out;
+    &--white {
+        border: 1px solid #E7E8E3;
+        border-radius: 6px;
+        background: #FFFFFF;
+        text-align: center;
+        color: #2A2C1F;
+        padding: 15px 30px;
+
+        &:hover, &:focus {
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+        }
+    }
+    &--orange {
+        background-color: #CF6F49;
+        border: 1px solid #CF6F49;
+        border-radius: 6px;
+        text-align: center;
+        color: #FFFFFF;
+        &:hover, &:focus {
+            cursor: pointer;
+            background-color: #bc4f24;
+            border: 1px solid #bc4f24;
+        }
+        &:active {
+            background-color: #CF6F49;
+            border: 1px solid #CF6F49;
+        }
+    }
+    &--transparent {
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        color: #2A2C1F;
+        &:hover, &:focus {
+            border: 1px solid #E7E8E3;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+            border-radius: 6px;
+        }
+    }
+    &--wrapper {
+        display: flex;
+        gap: 25px;
+    }
+    .material-icons--button {
+        font-size: 16px;
+        color: #2A2C1F;
+        padding-left: 5px;
+    }
+}
+.badge { 
+    &--wrapper {
+        margin-bottom: 20px;
+    }
+    background-color:#e8e5e3;
+    padding: 5px 12px;
+    color:#2A2C1F;
+    font-family: $fontRoboto;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 32px;
+}

@@ -1,0 +1,30 @@
+.comfort {
+    .container {
+        display: flex;
+        gap: 160px;
+        padding: 130px 60px 0;
+        background-color: #ffff;
+    }
+    &__content--wrapper {
+        padding-top: 140px;
+    }
+    &__main-title {
+        font-family: $fontRoboto;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #2A2C1F;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-family: $fontRoboto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #65665C;
+        margin-bottom: 20px;
+    }
+    &__button {
+        font-size: 16px;
+    }
+}

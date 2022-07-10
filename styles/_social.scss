@@ -1,0 +1,34 @@
+.social {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 200px;
+        padding: 80px 65px 40px;
+        background-color: #ffff;
+    }
+    &__title {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2A2C1F;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        gap: 30px;
+    }
+    &__media-item {
+        list-style: none;
+    }
+    &__icon{
+        transition: background-color .3s ease-in-out;
+        &:hover path, &:focus path {
+            fill: #bcc0ca;
+            cursor: pointer;
+        }
+    }
+}

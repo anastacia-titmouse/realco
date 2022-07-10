@@ -1,0 +1,52 @@
+.family {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    
+    .container {
+        width: 100%;
+        position: absolute;
+        border-radius: 24px;
+        color: #ffffff;
+        text-align: center;
+        background-color: #65665C;
+        padding: 100px 260px 100px 260px;
+        transform: translate(0, -50%);
+        box-sizing: border-box;
+    }
+    &__main-title {
+        font-family: $fontRoboto;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-family: $fontRoboto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #E7E8E3;
+        margin-bottom: 20px;
+    }
+    &__button {
+        margin: 0 auto;
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+    &__icon {
+        &--wrapper {
+            background-color: #ffffff;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            margin: 0 auto 15px auto;
+            border-radius: 8px;
+        }
+    }
+    .material-icons {
+        color: #65665C;
+        font-size: 32px;
+    }
+}
