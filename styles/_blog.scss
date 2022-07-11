@@ -1,6 +1,7 @@
 .blog {
     .container {
-        padding: 130px 65px 130px;
+        padding-top: 130px;
+        padding-bottom:  130px;;
         background-color: #F5F5F2;
     }
     &__title-container {
@@ -71,7 +72,7 @@
     &__blog-content {
         overflow: hidden;
         padding: 25px;
-
+        max-height: 265px;
     }
     &__link {
         font-family:$fontRoboto;
@@ -103,6 +104,9 @@
         line-height: 24px;
         color: #65665C;
         margin-bottom: 30px;
+        &--margin {
+            margin-bottom: 60px;
+        }
     }
     &__material-icons {
         font-family: 'Material Icons';

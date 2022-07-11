@@ -148,8 +148,11 @@ h1, h2, h3, h4, h5, h6, p {
   color: #FFFFFF;
 }
 .commercial__text--wrapper {
-  margin: 0 auto;
-  /* https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties */
+  margin: 0 auto; /* https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties */
+}
+.commercial__link:hover, .commercial__link:focus {
+  background-color: #b1b790;
+  cursor: pointer;
 }
 
 .header .container {
@@ -189,6 +192,9 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 16px;
   color: #2A2C1F;
 }
+.header__button--cart:hover, .header__button--cart:focus {
+  color: #65665C;
+}
 .header__button--search {
   width: 160px;
   height: 40px;
@@ -212,9 +218,6 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 16px;
   color: #2A2C1F;
 }
-.nav__item:hover, .nav__item:focus {
-  border-bottom: 1px solid #E7E8E3;
-}
 .nav__item--material {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,6 +229,9 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 16px;
   color: #2A2C1F;
 }
+.nav__item--material:hover, .nav__item--material:focus {
+  color: #65665C;
+}
 .nav__item--expand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,6 +240,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .nav__link {
   text-align: center;
+}
+.nav__link:hover, .nav__link:focus {
+  color: #65665C;
 }
 .nav .material-icons {
   font-size: 18px;
@@ -249,6 +258,10 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 .banner__content {
+  padding-left: 80px;
+  padding-right: 100px;
+}
+.banner__content--wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,7 +357,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .banner__button {
   font-size: 20px;
-  padding: 10px 20px;
+  padding: 10px 15px;
+  width: 155px;
 }
 .banner__background-image {
   width: 100%;
@@ -387,7 +401,7 @@ h1, h2, h3, h4, h5, h6, p {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 200px;
-  padding: 80px 65px 40px;
+  padding: 70px 65px 40px;
   background-color: white;
 }
 .social__title {
@@ -540,7 +554,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: white;
 }
 .fast__content--wrapper {
-  padding-top: 70px;
+  padding-top: 15px;
 }
 .fast__main-title {
   font-family: "Roboto", sans-serif;
@@ -921,7 +935,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .blog .container {
-  padding: 130px 65px 130px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   background-color: #F5F5F2;
 }
 .blog__title-container {
@@ -994,6 +1009,7 @@ h1, h2, h3, h4, h5, h6, p {
 .blog__blog-content {
   overflow: hidden;
   padding: 25px;
+  max-height: 265px;
 }
 .blog__link {
   font-family: "Roboto", sans-serif;
@@ -1025,6 +1041,9 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 24px;
   color: #65665C;
   margin-bottom: 30px;
+}
+.blog__blogpost-text--margin {
+  margin-bottom: 60px;
 }
 .blog__material-icons {
   font-family: "Material Icons";
@@ -1062,16 +1081,27 @@ h1, h2, h3, h4, h5, h6, p {
   display: -ms-flexbox;
   display: flex;
   gap: 90px;
-  margin-right: 150px;
+  margin-right: 140px;
 }
 .footer .footer-map__list-item {
-  list-style: none;
+  margin-bottom: 15px;
+}
+.footer .footer-map__list-link {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #2A2C1F;
-  margin-bottom: 15px;
+}
+.footer .footer-map__list-link:hover, .footer .footer-map__list-link:focus {
+  cursor: pointer;
+  color: #7e7f75;
+}
+.footer .footer-map__list-link:active {
+  color: #CF6F49;
+}
+.footer .footer-map__list-link:visited {
+  color: #CF6F49;
 }
 .footer .footer-map__title {
   margin-bottom: 10px;
@@ -1109,7 +1139,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .footer .footer-map__subscription-link:hover, .footer .footer-map__subscription-link:focus {
   cursor: pointer;
-  text-decoration: underline;
+  color: #2A2C1F;
 }
 .footer .footer-map__subscription-link:active {
   color: #CF6F49;
@@ -1200,7 +1230,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .footer .footer_socials__link:hover, .footer .footer_socials__link:focus {
   cursor: pointer;
-  text-decoration: underline;
+  color: #2A2C1F;
 }
 .footer .footer_socials__link:active {
   color: #CF6F49;
@@ -1215,6 +1245,10 @@ h1, h2, h3, h4, h5, h6, p {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+}
+.footer .footer_socials__icon:hover path, .footer .footer_socials__icon:focus path {
+  cursor: pointer;
+  fill: #65665C;
 }
 
 /*# sourceMappingURL=footer_socials.css.map *//*# sourceMappingURL=main.css.map */
