@@ -20,6 +20,9 @@
         margin-right: 15px;
         font-size: 16px;
         color: #2A2C1F;
+        &:hover, &:focus {
+            color:  #65665C;
+        }
     }
     &__button--search {
         width: 160px;
@@ -39,9 +42,6 @@
         font-weight: 400;
         font-size: 16px;
         color: #2A2C1F;
-        &:hover, &:focus {
-            border-bottom: 1px solid #E7E8E3;
-        }
         &--material {
             display: flex;
             gap: 5px;
@@ -50,6 +50,9 @@
             font-weight: 400;
             font-size: 16px;
             color: #2A2C1F;
+            &:hover, &:focus {
+                color:  #65665C;
+            }
         }
         &--expand {
             display: flex;
@@ -58,6 +61,9 @@
     }
     &__link {
         text-align: center;
+        &:hover, &:focus {
+            color:  #65665C;
+        }
     }
     .material-icons {
         font-size: 18px;

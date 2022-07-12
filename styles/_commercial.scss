@@ -15,4 +15,10 @@
             margin: 0 auto; /* https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties */
         }
     }
+    &__link {
+        &:hover, &:focus {
+            background-color:#b1b790;
+            cursor: pointer;
+        }
+    }
 }

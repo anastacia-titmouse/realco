@@ -18,17 +18,28 @@
             &--wrapper {
                 display: flex;
                 gap: 90px;
-                margin-right: 150px;
+                margin-right: 140px;
             }
         }
         &__list-item {
-            list-style: none;
+            margin-bottom: 15px;
+        }
+        &__list-link {
             font-family: $fontRoboto;
             font-weight: 400;
             font-size: 14px;
             line-height: 21px;
             color: #2A2C1F;
-            margin-bottom: 15px;
+            &:hover, &:focus {
+                cursor: pointer;
+                color: #7e7f75;
+            }
+            &:active {
+                color: #CF6F49;
+            }
+            &:visited {
+                color: #CF6F49;
+            }
         }
         &__title {
             margin-bottom: 10px;
@@ -65,7 +76,7 @@
             display: inline;
             &:hover, &:focus {
                 cursor: pointer;
-                text-decoration: underline;
+                color: #2A2C1F;
             }
             &:active {
                 color: #CF6F49;
@@ -121,7 +132,7 @@
             color: #65665C;
             &:hover, &:focus {
                 cursor: pointer;
-                text-decoration: underline;
+                color: #2A2C1F;
             }
             &:active {
                 color: #CF6F49;
@@ -134,6 +145,12 @@
         &__socials-list {
             display: flex;
             gap: 20px;
+        }
+        &__icon {
+            &:hover path, &:focus path {
+                cursor: pointer;
+                fill: #65665C;
+            }
         }
     }
 }
