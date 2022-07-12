@@ -1,12 +1,12 @@
 .fast {
     .container {
         display: flex;
-        gap: 160px;
+        gap: 80px;
         padding: 130px 60px 130px;
         background-color: #ffff;
     }
     &__content--wrapper {
-        padding-top: 15px;
+        padding-top: 50px;
     }
     &__main-title {
         font-family: $fontRoboto;
