@@ -496,6 +496,7 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 .about-us .skills-list__icon-wrapper {
   background: #FAE8E1;
@@ -689,6 +690,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .gallery__content {
   padding: 25px;
+  overflow: hidden;
 }
 .gallery__content--wrapper {
   background-color: #ffffff;
@@ -785,6 +787,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 16px;
   padding: 35px;
   width: 415px;
+  overflow: hidden;
 }
 .location__location-name {
   font-family: "Roboto", sans-serif;
@@ -878,6 +881,7 @@ h1, h2, h3, h4, h5, h6, p {
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   padding: 35px;
+  overflow: hidden;
 }
 .customers__testimonial--wrapper {
   display: grid;

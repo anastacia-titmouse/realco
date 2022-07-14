@@ -9,6 +9,7 @@
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
         border-radius: 16px;
         padding: 35px;
+        overflow: hidden;
         &--wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
